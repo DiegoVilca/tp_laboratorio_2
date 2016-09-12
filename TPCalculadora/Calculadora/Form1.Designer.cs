@@ -53,6 +53,7 @@
             this.btnOperar.TabIndex = 1;
             this.btnOperar.Text = "=";
             this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
             // cmbOperacion
             // 
@@ -81,9 +82,8 @@
             this.lblResultado.AutoSize = true;
             this.lblResultado.Location = new System.Drawing.Point(12, 27);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.Size = new System.Drawing.Size(0, 13);
             this.lblResultado.TabIndex = 5;
-            this.lblResultado.Text = "label1";
             // 
             // Form1
             // 

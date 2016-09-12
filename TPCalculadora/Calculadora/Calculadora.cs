@@ -11,7 +11,10 @@ namespace Calculadora
 
         public static double Operar(Numero numero1, Numero numero2, string operador)
         {
+
             double resultado = 0;
+
+
             
             switch (validarOperador(operador))
             {
