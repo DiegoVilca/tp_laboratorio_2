@@ -9,16 +9,48 @@ namespace Calculadora
     public class Calculadora
     {
 
-        public static Operar(Numero numero1, Numero numero2, string operador)
+        public static double Operar(Numero numero1, Numero numero2, string operador)
         {
-            //aca realizaria las cuentas y devolveria el resultado
-            //Si se divide por cero retorno 0
+            double resultado = 0;
+            
+            switch (validarOperador(operador))
+            {
+                case "+": resultado = numero1.getNumero() + numero2.getNumero();
+                    break;
+                    
+                case "-": resultado = numero1.getNumero() - numero2.getNumero();
+                    break;
+                    
+                case "*": resultado= numero1.getNumero() * numero2.getNumero();
+                    break;
+                    
+                case "/":
+
+                    if (numero2.getNumero() == 0)
+                    {
+                        resultado = 0;
+                    }
+                    else
+                    {
+                        resultado = numero1.getNumero() / numero2.getNumero();
+                    }
+
+                    break;                  
+            }
+
+            return resultado;
+
         }
+
+
 
         public static string validarOperador(string operador)
         {
-            //valido que el operador sea un caracter valido
-            //caso contrario retorno +
+           
+            if (operador != "+" && operador != "-" && operador != "*" && operador != "/")
+                return "+";
+            return operador;
+            
         }
     }
 }
