@@ -40,8 +40,13 @@ namespace Calculadora
            this.numero = validarNumero(numero);
         }
 
-        //Metodo
-
+        
+        /// <summary>
+        /// Valida que el numero ingresado sea valido.
+        /// De lo contrario devuelve cero.
+        /// </summary>
+        /// <param name="numeroString"></param>
+        /// <returns></returns>
         private static double validarNumero(string numeroString)
         {
             double numero;
@@ -51,9 +56,40 @@ namespace Calculadora
                 return numero;
             return 0;
 
-
         }
 
+
+        //Sobrecarga de operadores
+
+        public static double operator +(Numero numero1, Numero numero2)
+        {
+            return (numero1.numero + numero2.numero);
+        }
+
+        public static double operator -(Numero numero1, Numero numero2)
+        {
+            return (numero1.numero - numero2.numero);
+        }
+
+        public static double operator *(Numero numero1, Numero numero2)
+        {
+            return (numero1.numero * numero2.numero);
+        }
+
+        public static double operator /(Numero numero1, Numero numero2)
+        {
+            return (numero1.numero / numero2.numero);
+        }
+
+        public static bool operator ==(Numero numero1, int numero2)
+        {
+            return numero1.numero == numero2;
+        }
+
+        public static bool operator !=(Numero numero1, int numero2)
+        {
+            return !(numero1.numero == numero2);
+        }
 
     }
 }

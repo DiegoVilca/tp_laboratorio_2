@@ -16,12 +16,21 @@ namespace Calculadora
         {
             InitializeComponent();
 
+
+            //Ingreso los valores comboBox
             this.cmbOperacion.Items.Add("+");
             this.cmbOperacion.Items.Add("-");
             this.cmbOperacion.Items.Add("*");
             this.cmbOperacion.Items.Add("/");
         }
 
+
+        /// <summary>
+        /// Boton que realiza la operacion numerica.
+        /// Muestra resultado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             Numero numero1 = new Numero(this.txtNumero1.Text);
@@ -33,6 +42,12 @@ namespace Calculadora
             this.lblResultado.Text = resultado.ToString();
         }
 
+
+        /// <summary>
+        /// Limpia los valores ingresados y mostrados.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtNumero1.Clear();
