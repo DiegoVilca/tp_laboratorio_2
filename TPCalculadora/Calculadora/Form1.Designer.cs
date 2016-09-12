@@ -44,6 +44,7 @@
             this.btnLimpiar.TabIndex = 0;
             this.btnLimpiar.Text = "CC";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnOperar
             // 

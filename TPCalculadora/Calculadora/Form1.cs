@@ -33,6 +33,15 @@ namespace Calculadora
             this.lblResultado.Text = resultado.ToString();
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNumero1.Clear();
+            txtNumero2.Clear();
+            cmbOperacion.Text = " ";
+            lblResultado.Text = " ";
+        }
+
+
 
     }
 }
