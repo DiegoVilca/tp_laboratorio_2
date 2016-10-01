@@ -30,7 +30,7 @@ namespace Clase_12_Library_2
             sb.AppendFormat("COLOR  : {0}\r\n", this._color.ToString());
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Clase_12_Library_2
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
-            return (v1 == v2);
+            return (v1._patente == v2._patente);
         }
         /// <summary>
         /// Dos vehículos son distintos si su patente es distinta
