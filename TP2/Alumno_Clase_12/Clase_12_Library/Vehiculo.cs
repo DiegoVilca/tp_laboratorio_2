@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace Clase_12_Library_2
 {
+    public enum EMarca
+    {
+        Yamaha, Chevrolet, Ford, Iveco, Scania, BMW
+    }
     public abstract class Vehiculo
     {
-        enum EMarca
-        {
-            Yamaha, Chevrolet, Ford, Iveco, Scania, BMW
-        }
+        
         EMarca _marca;
         string _patente;
         ConsoleColor _color;
 
+        public Vehiculo(string patente, EMarca marca, ConsoleColor color)
+        {
+            this._patente = patente;
+            this._marca = marca;
+            this._color = color;
+        }
         /// <summary>
         /// Retornará la cantidad de ruedas del vehículo
         /// </summary>
