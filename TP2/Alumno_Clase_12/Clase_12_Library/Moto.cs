@@ -9,7 +9,7 @@ using System.Drawing;
 
 namespace Clase_12_Library
 {
-    class Moto : Vehiculo
+    public class Moto : Vehiculo
     {
         public Moto(EMarca marca, string patente, ConsoleColor color)
             : base(patente, marca, color)

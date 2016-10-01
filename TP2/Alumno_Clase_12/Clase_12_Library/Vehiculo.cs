@@ -6,21 +6,23 @@ using System.Threading.Tasks;
 
 namespace Clase_12_Library_2
 {
-    public enum EMarca
-    {
-        Yamaha, Chevrolet, Ford, Iveco, Scania, BMW
-    }
+    
     public abstract class Vehiculo
     {
         
-        EMarca _marca;
-        string _patente;
-        ConsoleColor _color;
+        private static EMarca _marca;
+        private string _patente;
+        private ConsoleColor _color;
+
+        public enum EMarca
+        {
+            Yamaha, Chevrolet, Ford, Iveco, Scania, BMW
+        }
 
         public Vehiculo(string patente, EMarca marca, ConsoleColor color)
         {
             this._patente = patente;
-            this._marca = marca;
+            Vehiculo._marca = marca;
             this._color = color;
         }
         /// <summary>
@@ -33,7 +35,7 @@ namespace Clase_12_Library_2
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("PATENTE: {0}\r\n", this._patente);
-            sb.AppendFormat("MARCA  : {0}\r\n", this._marca.ToString());
+            sb.AppendFormat("MARCA  : {0}\r\n", Vehiculo._marca.ToString());
             sb.AppendFormat("COLOR  : {0}\r\n", this._color.ToString());
             sb.AppendLine("---------------------");
 

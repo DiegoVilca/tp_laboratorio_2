@@ -7,7 +7,7 @@ using Clase_12_Library_2;
 
 namespace Clase_12_Library
 {
-    public abstract class Concecionaria 
+    public class Concecionaria 
     {
         List<Vehiculo> _vehiculos;
         int _espacioDisponible;
