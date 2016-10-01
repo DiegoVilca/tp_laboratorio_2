@@ -42,6 +42,7 @@
     <Compile Include="Automovil.cs" />
     <Compile Include="Camion.cs" />
     <Compile Include="Concecionaria.cs" />
+    <Compile Include="EMarca.cs" />
     <Compile Include="Moto.cs" />
     <Compile Include="Vehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Clase_12_Library_2;
 
-namespace Clase_12_Library
+namespace Clase_12_Library 
 {
-    public class Automovil
+    public class Automovil : Vehiculo
     {
         public Automovil(EMarca marca, string patente, ConsoleColor color)
             : base(patente, marca, color)

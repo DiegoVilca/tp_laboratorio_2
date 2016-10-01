@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Clase_12_Library_2;
 
 using System.Drawing;
 
 namespace Clase_12_Library
 {
-    class Moto
+    class Moto : Vehiculo
     {
         public Moto(EMarca marca, string patente, ConsoleColor color)
             : base(patente, marca, color)
