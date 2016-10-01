@@ -30,7 +30,7 @@ namespace Clase_12_Library
 
             sb.AppendLine("AUTOMOVIL");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine("RUEDAS : {0}", this.CantidadRuedas);
+            sb.AppendFormat("RUEDAS : {0}", this.CantidadRuedas);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
