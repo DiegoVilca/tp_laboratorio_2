@@ -72,7 +72,7 @@ namespace Clase_12_Library
                 }
             }
 
-            return sb;
+            return sb.ToString();
         }
         #endregion
 

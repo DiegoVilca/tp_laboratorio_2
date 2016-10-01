@@ -36,7 +36,7 @@ namespace Clase_12_Library
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
     }
 }
