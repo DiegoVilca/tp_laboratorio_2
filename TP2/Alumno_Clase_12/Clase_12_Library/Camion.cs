@@ -16,7 +16,7 @@ namespace Clase_12_Library
         /// <summary>
         /// Los camiones tienen 8 ruedas
         /// </summary>
-        protected short CantidadRuedas
+        protected override short CantidadRuedas
         {
             get
             {

@@ -28,7 +28,7 @@ namespace Clase_12_Library_2
         /// <summary>
         /// Retornará la cantidad de ruedas del vehículo
         /// </summary>
-        abstract short CantidadRuedas { get; set; }
+        protected abstract short CantidadRuedas { get; }
 
         protected sealed string Mostrar()
         {
