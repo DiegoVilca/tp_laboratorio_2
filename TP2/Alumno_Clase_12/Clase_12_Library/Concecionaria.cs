@@ -47,7 +47,7 @@ namespace Clase_12_Library
         /// <param name="concecionaria">Concecionaria a exponer</param>
         /// <param name="ETipo">Tipos de Vehiculos a mostrar</param>
         /// <returns></returns>
-        public string Mostrar(Concecionaria concecionaria, ETipo tipoDeVehiculo)
+        public static string Mostrar(Concecionaria concecionaria, ETipo tipoDeVehiculo)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -87,7 +87,7 @@ namespace Clase_12_Library
         {
             if (concecionaria._vehiculos.Count >= concecionaria._espacioDisponible)
                 return concecionaria;
-            foreach (Vehiculo v in concecionaria)
+            foreach (Vehiculo v in concecionaria._vehiculos)
             {
                 if (v == vehiculo)
                     return concecionaria;
@@ -104,7 +104,7 @@ namespace Clase_12_Library
         /// <returns></returns>
         public static Concecionaria operator -(Concecionaria concecionaria, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in concecionaria)
+            foreach (Vehiculo v in concecionaria._vehiculos)
             {
                 if (v == vehiculo)
                 {
