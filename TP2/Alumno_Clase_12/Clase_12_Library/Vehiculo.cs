@@ -30,7 +30,7 @@ namespace Clase_12_Library_2
         /// </summary>
         protected abstract short CantidadRuedas { get; }
 
-        protected sealed string Mostrar()
+        public virtual string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
