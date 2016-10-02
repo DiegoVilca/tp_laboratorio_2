@@ -10,7 +10,7 @@ namespace Clase_12_Library_2
     public abstract class Vehiculo
     {
         
-        private static EMarca _marca;
+        private EMarca _marca;
         private string _patente;
         private ConsoleColor _color;
 
@@ -22,7 +22,7 @@ namespace Clase_12_Library_2
         public Vehiculo(string patente, EMarca marca, ConsoleColor color)
         {
             this._patente = patente;
-            Vehiculo._marca = marca;
+            this._marca = marca;
             this._color = color;
         }
         /// <summary>
@@ -35,7 +35,7 @@ namespace Clase_12_Library_2
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("PATENTE: {0}\r\n", this._patente);
-            sb.AppendFormat("MARCA  : {0}\r\n", Vehiculo._marca.ToString());
+            sb.AppendFormat("MARCA  : {0}\r\n", this._marca.ToString());
             sb.AppendFormat("COLOR  : {0}\r\n", this._color.ToString());
             sb.AppendLine("---------------------");
 
