@@ -21,7 +21,7 @@ namespace Clase_12_Library
         {
             this._vehiculos = new List<Vehiculo>();
         }
-        public Concecionaria(int espacioDisponible)
+        public Concecionaria(int espacioDisponible) :this()
         {
             this._espacioDisponible = espacioDisponible;
         }
@@ -58,13 +58,13 @@ namespace Clase_12_Library
                 switch (tipoDeVehiculo)
                 {
                     case ETipo.Automovil:
-                        sb.AppendLine(v.Mostrar());
+                        sb.AppendLine(((Automovil)v).Mostrar());
                         break;
                     case ETipo.Moto:
-                        sb.AppendLine(v.Mostrar());
+                        sb.AppendLine(((Moto)v).Mostrar());
                         break;
                     case ETipo.Camion:
-                        sb.AppendLine(v.Mostrar());
+                        sb.AppendLine(((Camion)v).Mostrar());
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
